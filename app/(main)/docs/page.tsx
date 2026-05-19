@@ -42,7 +42,7 @@ export default function AboutPage() {
         <section style={{
           minHeight: '85vh',
           display: 'flex', flexDirection: 'column', justifyContent: 'center',
-          padding: '120px 72px 80px',
+          padding: 'clamp(40px,8vw,120px) clamp(20px,6vw,72px) 80px',
           position: 'relative',
           maxWidth: 1100, margin: '0 auto',
         }}>
@@ -58,7 +58,7 @@ export default function AboutPage() {
             <span style={{ color: 'var(--accent)', opacity: 0.6 }}>ITM University · Raipur</span>
           </div>
 
-          {/* The opening statement big, blunt, true */}
+          {/* The opening statement — big, blunt, true */}
           <div className="doc-fade-2">
             <h1 style={{
               fontFamily: 'var(--font-cormorant), Georgia, serif',
@@ -82,7 +82,7 @@ export default function AboutPage() {
             </h1>
           </div>
 
-          {/* The expansion quiet, heavy */}
+          {/* The expansion — quiet, heavy */}
           <div className="doc-fade-3" style={{ maxWidth: 520 }}>
             <p style={{
               fontSize: 18, color: 'var(--text-secondary)',
@@ -99,18 +99,18 @@ export default function AboutPage() {
             Show what actually happens. Specific. Familiar. Quiet tragedy.
         ──────────────────────────────────────────────────────────────────── */}
         <section style={{
-          padding: '80px 72px 100px',
+          padding: 'clamp(40px,6vw,80px) clamp(20px,6vw,72px) 100px',
           borderTop: '1px solid var(--border-subtle)',
           maxWidth: 1100, margin: '0 auto',
         }}>
           <div style={{
-            display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80,
+            display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'clamp(24px,5vw,80px)',
             alignItems: 'start',
           }}>
-            {/* Left the quiet tragedy */}
+            {/* Left — the quiet tragedy */}
             <div>
               <div style={{ fontFamily: 'monospace', fontSize: 9, color: 'var(--text-muted)', letterSpacing: '0.2em', marginBottom: 36 }}>
-                01 -THE LOSS
+                01 — THE LOSS
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
                 {[
@@ -135,7 +135,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right the scale */}
+            {/* Right — the scale */}
             <div style={{ paddingTop: 48 }}>
               <blockquote style={{
                 fontFamily: 'var(--font-cormorant), Georgia, serif',
@@ -152,7 +152,7 @@ export default function AboutPage() {
               <p style={{ fontSize: 15, color: 'var(--text-muted)', lineHeight: 1.8, fontWeight: 300 }}>
                 At ITM University, every graduating batch leaves behind hundreds
                 of projects. The vast majority of them vanish. Not because
-                the work wasn&apos;t good enough but because there was nowhere
+                the work wasn&apos;t good enough — but because there was nowhere
                 permanent to put them.
               </p>
             </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
             Introduce Forge. Not as a product. As a response.
         ──────────────────────────────────────────────────────────────────── */}
         <section style={{
-          padding: '100px 72px',
+          padding: 'clamp(48px,8vw,100px) clamp(20px,6vw,72px)',
           borderTop: '1px solid var(--border-subtle)',
           position: 'relative', overflow: 'hidden',
         }}>
@@ -200,7 +200,7 @@ export default function AboutPage() {
                 {[
                   'A permanent archive for every project built at ITM University.',
                   'Not uploads. Not a portfolio site.',
-                  'A living institutional memory where student work survives graduation, outlasts student emails, and waits patiently for whoever comes next.',
+                  'A living institutional memory — where student work survives graduation, outlasts student emails, and waits patiently for whoever comes next.',
                 ].map((text, i) => (
                   <p key={i} style={{
                     fontSize: i === 2 ? 15 : 16,
@@ -216,12 +216,12 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* ── SECTION 4: THE SYSTEM Build-on ─────────────────────────────
+        {/* ── SECTION 4: THE SYSTEM — Build-on ─────────────────────────────
             The gold mine. Ideas surviving through generations.
             Visual: a knowledge family tree, described in words.
         ──────────────────────────────────────────────────────────────────── */}
         <section style={{
-          padding: '100px 72px',
+          padding: 'clamp(48px,8vw,100px) clamp(20px,6vw,72px)',
           borderTop: '1px solid var(--border-subtle)',
           background: 'linear-gradient(180deg, transparent, rgba(201,151,58,0.02) 50%, transparent)',
         }}>
@@ -230,9 +230,9 @@ export default function AboutPage() {
               03 — THE SYSTEM
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'clamp(24px,5vw,80px)', alignItems: 'start' }}>
 
-              {/* Left the concept */}
+              {/* Left — the concept */}
               <div>
                 <h2 style={{
                   fontFamily: 'var(--font-cormorant), Georgia, serif',
@@ -244,12 +244,12 @@ export default function AboutPage() {
                 </h2>
                 <p style={{ fontSize: 15, color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: 20, fontWeight: 300 }}>
                   When you submit a project that builds on someone else&apos;s
-                  work an AI tool extended, a system redesigned, a thesis
-                  continued you can credit the original.
+                  work — an AI tool extended, a system redesigned, a thesis
+                  continued — you can credit the original.
                 </p>
                 <p style={{ fontSize: 15, color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: 20, fontWeight: 300 }}>
                   This creates a visible chain. A lineage of ideas.
-                  A family tree of student knowledge branching, growing,
+                  A family tree of student knowledge — branching, growing,
                   compounding across years and batches.
                 </p>
                 <p style={{
@@ -263,12 +263,12 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* Right visual lineage tree */}
+              {/* Right — visual lineage tree */}
               <div style={{ paddingTop: 8 }}>
                 <div style={{ fontFamily: 'monospace', fontSize: 10, color: 'var(--text-muted)', letterSpacing: '0.1em', marginBottom: 24, opacity: 0.6 }}>
-                  KNOWLEDGE LINEAGE EXAMPLE
+                  KNOWLEDGE LINEAGE — EXAMPLE
                 </div>
-                {/* Tree visualization typographic */}
+                {/* Tree visualization — typographic */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
                   {[
                     { indent: 0, year: '2022', title: 'Basic Attendance System',    sub: 'Batch of 2022 · CSE',          origin: true },
@@ -334,7 +334,7 @@ export default function AboutPage() {
             What becomes possible. Hopeful after the grief.
         ──────────────────────────────────────────────────────────────────── */}
         <section style={{
-          padding: '100px 72px',
+          padding: 'clamp(48px,8vw,100px) clamp(20px,6vw,72px)',
           borderTop: '1px solid var(--border-subtle)',
         }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
@@ -362,12 +362,12 @@ export default function AboutPage() {
             </h2>
 
             {/* Three futures */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 40 }}>
               {[
                 {
                   num: '01',
                   title: 'No more starting from scratch.',
-                  body: 'A first-year student arrives. Instead of building a basic attendance system again, they find one already archived and extend it into something new.',
+                  body: 'A first-year student arrives. Instead of building a basic attendance system again, they find one already archived — and extend it into something new.',
                 },
                 {
                   num: '02',
@@ -409,7 +409,7 @@ export default function AboutPage() {
           background: 'linear-gradient(180deg, transparent, rgba(201,151,58,0.015) 50%, transparent)',
         }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'clamp(24px,5vw,80px)' }}>
               <div>
                 <div style={{ fontFamily: 'monospace', fontSize: 9, color: 'var(--text-muted)', letterSpacing: '0.2em', marginBottom: 28 }}>
                   WHAT FORGE IS
@@ -418,7 +418,7 @@ export default function AboutPage() {
                   {[
                     'A permanent academic archive.',
                     'A knowledge preservation system.',
-                    'A place for solo work and team work equally.',
+                    'A place for solo work and team work — equally.',
                     'A lineage of ideas across generations.',
                     'The institutional memory of ITM University.',
                   ].map((line, i) => (
@@ -457,7 +457,7 @@ export default function AboutPage() {
             "Leave something behind." Not "Submit Project."
         ──────────────────────────────────────────────────────────────────── */}
         <section style={{
-          padding: '140px 72px 160px',
+          padding: 'clamp(60px,10vw,140px) clamp(20px,6vw,72px) clamp(60px,10vw,160px)',
           borderTop: '1px solid var(--border-subtle)',
           position: 'relative', overflow: 'hidden',
           textAlign: 'center',

@@ -286,15 +286,25 @@ export default function SidebarClient({ profile, pendingInvitations }: Props) {
           }}>
             Forge
           </span>
-          <Avatar profile={profile} size={30} />
+          {/* Avatar — tappable, goes to profile */}
+          <div
+            onClick={() => profile ? window.location.href = `/profile/${profile.username}` : window.location.href = '/login'}
+            style={{ cursor: 'pointer' }}
+          >
+            <Avatar profile={profile} size={30} />
+          </div>
         </div>
         {drawerOpen && (
           <>
             <div onClick={() => setDrawerOpen(false)} style={{
-              position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.4)',
-              zIndex: 300, backdropFilter: 'blur(2px)',
+              position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)',
+              zIndex: 300, backdropFilter: 'blur(3px)',
             }} />
-            <div className="animate-slide-in" style={{ position: 'fixed', top: 0, left: 0, bottom: 0, zIndex: 400, height: '100vh' }}>
+            {/* Drawer — max 80% width on mobile so content is still visible */}
+            <div className="animate-slide-in" style={{
+              position: 'fixed', top: 0, left: 0, bottom: 0, zIndex: 400,
+              height: '100vh', width: 'min(var(--sidebar-width), 80vw)',
+            }}>
               <SidebarContent />
             </div>
           </>
