@@ -93,6 +93,7 @@ export default function SidebarClient({ profile, pendingInvitations }: Props) {
         borderRight: '1px solid var(--sidebar-border)',
         display: 'flex', flexDirection: 'column',
         overflowY: 'auto',
+        overflowX: 'hidden',
       }}>
 
         {/* Logo + Bell */}
@@ -155,7 +156,7 @@ export default function SidebarClient({ profile, pendingInvitations }: Props) {
         </div>
 
         {/* Nav */}
-        <nav style={{ padding: '12px 10px', flex: 1 }}>
+        <nav style={{ padding: '12px 10px', flex: '0 0 auto' }}>
           {NAV_ITEMS.map(({ href, label, icon }) => {
             const active = isActive(href)
             return (
