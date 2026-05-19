@@ -24,7 +24,7 @@ async function createClient() {
                 try {
                     cookiesToSet.forEach(({ name, value, options })=>cookieStore.set(name, value, options));
                 } catch  {
-                // Server Component — cookies can't be set, ignore
+                // Server Component — ignore
                 }
             }
         }

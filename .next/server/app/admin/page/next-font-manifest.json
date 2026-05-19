@@ -1,12 +1,8 @@
 {
   "pages": {},
   "app": {
-    "[project]/app/admin/page": [
-      "static/media/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g-s.p.38bf9709.woff2",
-      "static/media/rP2Yp2ywxg089UriI5_g4vlH9VoD8Cmcqbu0_K6z9mXg-s.p.70bc9660.woff2",
-      "static/media/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D-s.p.461fbe43.woff2"
-    ]
+    "[project]/app/admin/page": []
   },
-  "appUsingSizeAdjust": true,
+  "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false
 }

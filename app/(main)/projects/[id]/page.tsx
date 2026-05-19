@@ -89,7 +89,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   const tags    = project.project_tags?.map(pt => pt.tags).filter(Boolean) ?? []
   const members = project.project_members ?? []
   const author  = project.profiles
-const team = (project as any).teams as { id: string; name: string; logo_url: string | null; description: string | null; faculty_guide: string | null } | null
+  const team    = (project as any).teams as { id: string; name: string; logo_url: string | null; description: string | null; faculty_guide: string | null } | null
 
   const isOwner = user && (
     project.submitted_by === user.id ||

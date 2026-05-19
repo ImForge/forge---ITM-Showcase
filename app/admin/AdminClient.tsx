@@ -174,7 +174,7 @@ export default function AdminClient({
       {/* Header */}
       <div className="animate-fade-up" style={{ marginBottom: 40 }}>
         <h1 style={{
-          fontFamily: 'Cormorant Garamond, serif',
+          fontFamily: 'var(--font-cormorant), Georgia, serif',
           fontSize: 56, fontWeight: 400, lineHeight: 1, marginBottom: 8,
         }}>
           Admin Dashboard
@@ -199,13 +199,12 @@ export default function AdminClient({
           { label: 'Open Reports',      value: reports.length, warning: reports.length > 0 },
         ].map(({ label, value, warning }) => (
           <div key={label} style={{
-            background: 'var(--bg-surface)',
+            background: warning && value > 0 ? 'var(--accent-light)' : 'var(--bg-surface)',
             border: `1px solid ${warning && value > 0 ? 'rgba(201,151,58,0.4)' : 'var(--border-subtle)'}`,
             borderRadius: 12, padding: '20px 16px', textAlign: 'center',
-            background: warning && value > 0 ? 'var(--accent-light)' : 'var(--bg-surface)',
           } as React.CSSProperties}>
             <div style={{
-              fontFamily: 'Cormorant Garamond, serif', fontSize: 36,
+              fontFamily: 'var(--font-cormorant), Georgia, serif', fontSize: 36,
               fontWeight: 300, color: warning && value > 0 ? 'var(--accent)' : 'var(--text-primary)',
             }}>
               {value}

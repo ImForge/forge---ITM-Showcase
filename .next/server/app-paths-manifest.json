@@ -10,5 +10,6 @@
   "/(main)/projects/[id]/page": "app/(main)/projects/[id]/page.js",
   "/(main)/projects/page": "app/(main)/projects/page.js",
   "/(main)/projects/submit/page": "app/(main)/projects/submit/page.js",
-  "/(main)/teams/page": "app/(main)/teams/page.js"
+  "/(main)/teams/page": "app/(main)/teams/page.js",
+  "/admin/page": "app/admin/page.js"
 }

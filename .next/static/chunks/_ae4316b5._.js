@@ -448,7 +448,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         style: {
-                            fontFamily: 'Cormorant Garamond, serif',
+                            fontFamily: 'var(--font-cormorant), Georgia, serif',
                             fontSize: 56,
                             fontWeight: 400,
                             lineHeight: 1,
@@ -518,17 +518,16 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                     }
                 ].map(({ label, value, warning })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
-                            background: 'var(--bg-surface)',
+                            background: warning && value > 0 ? 'var(--accent-light)' : 'var(--bg-surface)',
                             border: `1px solid ${warning && value > 0 ? 'rgba(201,151,58,0.4)' : 'var(--border-subtle)'}`,
                             borderRadius: 12,
                             padding: '20px 16px',
-                            textAlign: 'center',
-                            background: warning && value > 0 ? 'var(--accent-light)' : 'var(--bg-surface)'
+                            textAlign: 'center'
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 style: {
-                                    fontFamily: 'Cormorant Garamond, serif',
+                                    fontFamily: 'var(--font-cormorant), Georgia, serif',
                                     fontSize: 36,
                                     fontWeight: 300,
                                     color: warning && value > 0 ? 'var(--accent)' : 'var(--text-primary)'
@@ -536,7 +535,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                 children: value
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 207,
+                                lineNumber: 206,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -549,7 +548,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                 children: label
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 213,
+                                lineNumber: 212,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -603,12 +602,12 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                         children: label
                     }, t, false, {
                         fileName: "[project]/app/admin/AdminClient.tsx",
-                        lineNumber: 233,
+                        lineNumber: 232,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/admin/AdminClient.tsx",
-                lineNumber: 221,
+                lineNumber: 220,
                 columnNumber: 7
             }, this),
             tab === 'pending' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -634,26 +633,26 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                             children: "✓"
                         }, void 0, false, {
                             fileName: "[project]/app/admin/AdminClient.tsx",
-                            lineNumber: 246,
+                            lineNumber: 245,
                             columnNumber: 15
                         }, this),
                         "All projects reviewed — inbox zero!"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/admin/AdminClient.tsx",
-                    lineNumber: 245,
+                    lineNumber: 244,
                     columnNumber: 13
                 }, this) : pending.map((p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ProjectRow, {
                         project: p,
                         showModerate: true
                     }, p.id, false, {
                         fileName: "[project]/app/admin/AdminClient.tsx",
-                        lineNumber: 250,
+                        lineNumber: 249,
                         columnNumber: 30
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/admin/AdminClient.tsx",
-                lineNumber: 239,
+                lineNumber: 238,
                 columnNumber: 9
             }, this),
             tab === 'projects' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -667,12 +666,12 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                         project: p
                     }, p.id, false, {
                         fileName: "[project]/app/admin/AdminClient.tsx",
-                        lineNumber: 262,
+                        lineNumber: 261,
                         columnNumber: 33
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/admin/AdminClient.tsx",
-                lineNumber: 257,
+                lineNumber: 256,
                 columnNumber: 9
             }, this),
             tab === 'users' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -715,12 +714,12 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "[project]/app/admin/AdminClient.tsx",
-                                    lineNumber: 286,
+                                    lineNumber: 285,
                                     columnNumber: 21
                                 }, this) : u.username[0]?.toUpperCase()
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 279,
+                                lineNumber: 278,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -736,7 +735,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                         children: u.full_name || u.username
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/AdminClient.tsx",
-                                        lineNumber: 290,
+                                        lineNumber: 289,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -750,13 +749,13 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/admin/AdminClient.tsx",
-                                        lineNumber: 291,
+                                        lineNumber: 290,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 289,
+                                lineNumber: 288,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -770,7 +769,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                 children: u.role
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 293,
+                                lineNumber: 292,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -788,18 +787,18 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                 children: u.role === 'admin' ? 'Make Student' : 'Make Admin'
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 300,
+                                lineNumber: 299,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, u.id, true, {
                         fileName: "[project]/app/admin/AdminClient.tsx",
-                        lineNumber: 274,
+                        lineNumber: 273,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/admin/AdminClient.tsx",
-                lineNumber: 268,
+                lineNumber: 267,
                 columnNumber: 9
             }, this),
             tab === 'reports' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -818,7 +817,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                     children: "No reports — all clear."
                 }, void 0, false, {
                     fileName: "[project]/app/admin/AdminClient.tsx",
-                    lineNumber: 320,
+                    lineNumber: 319,
                     columnNumber: 13
                 }, this) : reports.map((r, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
@@ -843,7 +842,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                         children: "View Project →"
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/AdminClient.tsx",
-                                        lineNumber: 330,
+                                        lineNumber: 329,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -855,13 +854,13 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                         children: new Date(r.created_at).toLocaleDateString()
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/AdminClient.tsx",
-                                        lineNumber: 336,
+                                        lineNumber: 335,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 328,
+                                lineNumber: 327,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -873,18 +872,18 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                 children: r.reason
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 340,
+                                lineNumber: 339,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, r.id, true, {
                         fileName: "[project]/app/admin/AdminClient.tsx",
-                        lineNumber: 324,
+                        lineNumber: 323,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/admin/AdminClient.tsx",
-                lineNumber: 314,
+                lineNumber: 313,
                 columnNumber: 9
             }, this),
             tab === 'tags' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -912,7 +911,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                 onKeyDown: (e)=>e.key === 'Enter' && addTag()
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 357,
+                                lineNumber: 356,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -931,13 +930,13 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                 children: "Add Tag"
                             }, void 0, false, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 364,
+                                lineNumber: 363,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/admin/AdminClient.tsx",
-                        lineNumber: 352,
+                        lineNumber: 351,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -965,7 +964,7 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                         children: tag.name
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/AdminClient.tsx",
-                                        lineNumber: 381,
+                                        lineNumber: 380,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -982,24 +981,24 @@ function AdminClient({ pendingProjects: initPending, allProjects: initAll, repor
                                         children: "✕"
                                     }, void 0, false, {
                                         fileName: "[project]/app/admin/AdminClient.tsx",
-                                        lineNumber: 382,
+                                        lineNumber: 381,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, tag.id, true, {
                                 fileName: "[project]/app/admin/AdminClient.tsx",
-                                lineNumber: 376,
+                                lineNumber: 375,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/admin/AdminClient.tsx",
-                        lineNumber: 374,
+                        lineNumber: 373,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/admin/AdminClient.tsx",
-                lineNumber: 350,
+                lineNumber: 349,
                 columnNumber: 9
             }, this)
         ]

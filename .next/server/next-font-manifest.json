@@ -20,11 +20,7 @@
       "static/media/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D-s.p.461fbe43.woff2",
       "static/media/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g-s.p.38bf9709.woff2"
     ],
-    "[project]/app/(main)/page": [
-      "static/media/rP2Yp2ywxg089UriI5_g4vlH9VoD8Cmcqbu0_K6z9mXg-s.p.70bc9660.woff2",
-      "static/media/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D-s.p.461fbe43.woff2",
-      "static/media/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g-s.p.38bf9709.woff2"
-    ],
+    "[project]/app/(main)/page": [],
     "[project]/app/(main)/profile/[username]/page": [
       "static/media/rP2Yp2ywxg089UriI5_g4vlH9VoD8Cmcqbu0_K6z9mXg-s.p.70bc9660.woff2",
       "static/media/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D-s.p.461fbe43.woff2",
@@ -45,21 +41,14 @@
       "static/media/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D-s.p.461fbe43.woff2",
       "static/media/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g-s.p.38bf9709.woff2"
     ],
-    "[project]/app/(main)/projects/page": [
-      "static/media/rP2Yp2ywxg089UriI5_g4vlH9VoD8Cmcqbu0_K6z9mXg-s.p.70bc9660.woff2",
-      "static/media/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D-s.p.461fbe43.woff2",
-      "static/media/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g-s.p.38bf9709.woff2"
-    ],
+    "[project]/app/(main)/projects/page": [],
     "[project]/app/(main)/projects/submit/page": [
       "static/media/rP2Yp2ywxg089UriI5_g4vlH9VoD8Cmcqbu0_K6z9mXg-s.p.70bc9660.woff2",
       "static/media/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D-s.p.461fbe43.woff2",
       "static/media/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g-s.p.38bf9709.woff2"
     ],
-    "[project]/app/(main)/teams/page": [
-      "static/media/rP2Yp2ywxg089UriI5_g4vlH9VoD8Cmcqbu0_K6z9mXg-s.p.70bc9660.woff2",
-      "static/media/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D-s.p.461fbe43.woff2",
-      "static/media/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g-s.p.38bf9709.woff2"
-    ]
+    "[project]/app/(main)/teams/page": [],
+    "[project]/app/admin/page": []
   },
   "appUsingSizeAdjust": true,
   "pages": {},
