@@ -241,11 +241,12 @@ export default function SignupPage() {
               <label style={labelStyle}>Confirm Password</label>
               <input type="password" value={confirmPw}
                 onChange={e => setConfirm(e.target.value)}
-                placeholder="••••••••" style={inputStyle}
-                style={{
-                  ...inputStyle,
-                  borderColor: confirmPw && confirmPw !== password ? 'var(--danger)' : undefined,
-                } as React.CSSProperties} />
+              placeholder="••••••••"
+style={{
+  ...inputStyle,
+  borderColor: confirmPw && confirmPw !== password ? 'var(--danger)' : undefined,
+} as React.CSSProperties}
+/>
             </div>
             <button type="submit" disabled={loading} style={{
               width: '100%', padding: '13px',
