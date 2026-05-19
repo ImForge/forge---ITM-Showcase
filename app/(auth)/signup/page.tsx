@@ -143,8 +143,8 @@ export default function SignupPage() {
             </div>
             <div style={{ marginBottom: 28 }}>
               <label style={lbl}>Confirm Password</label>
-              <input type="password" value={confirmPw} onChange={e => setConfirm(e.target.value)} placeholder="••••••••"
-                style={{ ...inp, borderColor: confirmPw && confirmPw !== password ? 'var(--danger)' : undefined }} />
+             <input type="password" value={confirmPw} onChange={e => setConfirm(e.target.value)} placeholder="••••••••"
+  style={{ ...inp, borderColor: confirmPw && confirmPw !== password ? 'var(--danger)' : undefined }} />
             </div>
             <button type="submit" disabled={loading} style={{ width: '100%', padding: '13px', background: 'var(--accent)', color: '#1c1917', border: 'none', borderRadius: 10, fontSize: 14, fontWeight: 600, cursor: 'pointer', fontFamily: 'inherit' }}>
               {loading ? 'Creating account…' : 'Create Account →'}
