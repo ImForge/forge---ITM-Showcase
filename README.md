@@ -13,7 +13,9 @@ Forge is the permanent project-sharing and knowledge-preservation platform for I
 - **Admin panel** — Approve/reject submissions, manage tags, manage users.
 
 ---
-
+check it out https://itmshowcase.vercel.app/
+Testing Email- testing@gmail.com
+Password- 12345
 ## Tech Stack
 
 | Layer | Tech |
@@ -67,7 +69,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
- or check it out https://itmshowcase.vercel.app/
+ 
 ### 5. Make yourself an admin
 
 After signing up, run this in Supabase SQL Editor:
