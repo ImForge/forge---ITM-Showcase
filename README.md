@@ -67,7 +67,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
-
+ or check it out https://itmshowcase.vercel.app/
 ### 5. Make yourself an admin
 
 After signing up, run this in Supabase SQL Editor:
