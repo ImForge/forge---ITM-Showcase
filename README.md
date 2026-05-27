@@ -26,7 +26,7 @@ Password- 12345
 | Storage | Supabase Storage |
 | Styling | Tailwind CSS v4 + inline CSS variables |
 | Fonts | Cormorant Garamond + DM Sans (next/font) |
-| Deployment | Vercel |
+| Deployment | Vercel (live) |
 
 ---
 
